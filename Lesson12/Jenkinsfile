@@ -2,11 +2,8 @@ pipeline {
     agent any
          stages {
 
-
-
-            
             stage('Step1') {
-
+                git 'https://github.com/fhoton/DevOps_learning.git'
 
 
 
