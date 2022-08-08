@@ -14,6 +14,6 @@ then
 
 	done
 else
-	echo "process $name not search"
+	echo "process $name not find"
 fi
 
