@@ -12,5 +12,7 @@ then
 		echo "process $name $pid_proc suspended"
 
 	done
+else
+	echo "process $name not search"
 fi
 
