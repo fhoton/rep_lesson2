@@ -1,0 +1,45 @@
+package _Self.buildTypes
+
+import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.triggers.vcs
+
+object BuildStage2 : BuildType({
+    name = "Build_Stage_2"
+
+    artifactRules = """
+        Lesson6/*.sh => release_ver_%build.counter%.zip
+        release_ver_%build.counter%.zip => ./Lesson6
+    """.trimIndent()
+
+    vcs {
+        root(AbsoluteId("DevOpsLearning_HttpsGithubComFhotonDevOpsLearningGitRefsHeadsMain"))
+    }
+steps {
+    script {
+        name = "Step 1"
+        scriptContent = "./Lesson6/1-st_task.sh"
+    }
+    script {
+        name = "Step 2"
+        scriptContent = "./Lesson6/2-st_task.sh"
+    }
+    script {
+        name = "Step 3"
+        scriptContent = "./Lesson6/3-st_task.sh"
+    }
+    script {
+        name = "Step 4"
+        scriptContent = "./Lesson6/4-st_task.sh"
+    }
+}
+    triggers {
+        vcs {
+        }
+    }
+
+    dependencies {
+        snapshot(AbsoluteId("DevOpsLearning_BuildStage1")) {
+        }
+    }
+})

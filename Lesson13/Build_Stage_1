@@ -1,0 +1,33 @@
+package _Self.buildTypes
+
+import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.triggers.vcs
+
+object BuildStage1 : BuildType({
+    name = "Build_Stage_1"
+
+    vcs {
+        root(HttpsGithubComFhotonDevOpsLearningGitRefsHeadsMain)
+    }
+
+    steps {
+        script {
+            name = "Step 1"
+            scriptContent = "./Lesson5/etc-dir.sh"
+        }
+        script {
+            name = "Step 2"
+            scriptContent = "./Lesson5/execut.sh"
+        }
+        script {
+            name = "Step 3"
+            scriptContent = "./Lesson5/sort_log.sh"
+        }
+    }
+
+    triggers {
+        vcs {
+        }
+    }
+})
