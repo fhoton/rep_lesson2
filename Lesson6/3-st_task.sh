@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-` find / -name "*.py" > py_scripts 2>py_errors`
+` find / -name "*.py" > py_scripts 2>py_errors `
 
 
 

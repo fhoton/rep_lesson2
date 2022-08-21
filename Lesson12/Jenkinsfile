@@ -1,35 +1,41 @@
 pipeline {
     agent any
+    
          stages {
 
-            stage('Step1') {
-                git 'https://github.com/fhoton/DevOps_learning.git'
+            stage ('Step1') {
+                
+                steps {
+                    cleanWs()
+                    sh " git clone https://github.com/fhoton/DevOps_learning.git "
+                    sh " chmod 777 ./DevOps_learning/Lesson7/status_2.sh"
+                    sh " sudo sh ./DevOps_learning/Lesson7/status_2.sh "
 
+                 }
+            }
 
-
-
-
-                           }
-            stage('Step2') {
-
-
-
-
-
-
-                           }
-            
-            stage('Step3') {
-
-
-
-
-
-
-                           }
-
-
+            stage ('Step2') {
+                
+                steps {    
+    //                sh " sleep 10"
+                    sh " sudo systemctl start apache2.service "
                 }
+            }
+            stage ('Ok or No_Ok'){
+                steps {
+                    
+                sh '''if [ `pgrep -U root "apache" ` -gt 0 ]
+                then
+                    echo "Build status OK"
+                else
+	                echo "Build status failed"
+                fi'''
+                    
+                }
+            }
+            
+            
+        }
          
          
-         }
+    }
