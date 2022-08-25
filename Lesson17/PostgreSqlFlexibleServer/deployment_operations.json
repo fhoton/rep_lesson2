@@ -1,0 +1,70 @@
+[
+  {
+    "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/PostgreSqlFlexibleServer_3bbbc524ec644a2eb9bf4fef9ea02595/operations/E2B0B62BEF984358",
+    "operationId": "E2B0B62BEF984358",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Running",
+      "timestamp": "2022-08-25T15:49:39.1542658Z",
+      "duration": "PT1.6203084S",
+      "trackingId": "4fc8a573-8c5a-400d-aa3e-aea49ed70094",
+      "statusCode": "Accepted",
+      "targetResource": {
+        "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.DBforPostgreSQL/flexibleServers/vm-postgre",
+        "resourceType": "Microsoft.DBforPostgreSQL/flexibleServers",
+        "resourceName": "vm-postgre"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/PostgreSqlFlexibleServer_3bbbc524ec644a2eb9bf4fef9ea02595/operations/7ED844F094CB009C",
+    "operationId": "7ED844F094CB009C",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2022-08-25T15:49:37.4902921Z",
+      "duration": "PT47.3436745S",
+      "trackingId": "43336fef-d6b0-4ba7-852d-0ad4c034b61f",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/virtualNetworkLink_20220825T154759466Z",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "virtualNetworkLink_20220825T154759466Z"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/PostgreSqlFlexibleServer_3bbbc524ec644a2eb9bf4fef9ea02595/operations/6A1A6AF12D96273A",
+    "operationId": "6A1A6AF12D96273A",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2022-08-25T15:48:18.5837473Z",
+      "duration": "PT16.7852577S",
+      "trackingId": "dab44aeb-4dc9-456f-aa3f-40570f5a6efb",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/virtualNetwork_20220825T154759466Z",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "virtualNetwork_20220825T154759466Z"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/PostgreSqlFlexibleServer_3bbbc524ec644a2eb9bf4fef9ea02595/operations/0B270D7E5CFBB8A7",
+    "operationId": "0B270D7E5CFBB8A7",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2022-08-25T15:48:50.0734536Z",
+      "duration": "PT48.274964S",
+      "trackingId": "353cda0d-d5af-4613-8125-e4a640d0c9d5",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/privateDnsZone_20220825T154759466Z",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "privateDnsZone_20220825T154759466Z"
+      }
+    }
+  }
+]
