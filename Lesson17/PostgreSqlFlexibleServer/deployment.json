@@ -1,0 +1,227 @@
+{
+  "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/PostgreSqlFlexibleServer_3bbbc524ec644a2eb9bf4fef9ea02595",
+  "name": "PostgreSqlFlexibleServer_3bbbc524ec644a2eb9bf4fef9ea02595",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.DBforPostgreSQL/flexibleServers/vm-postgre",
+    "marketplaceItemId": "Microsoft.PostgreSQLServer",
+    "provisioningHash": "PostgreSqlFlexibleServer"
+  },
+  "properties": {
+    "templateHash": "13949752868507756473",
+    "parameters": {
+      "administratorLogin": {
+        "type": "String",
+        "value": "devops_test_postgres"
+      },
+      "administratorLoginPassword": {
+        "type": "SecureString"
+      },
+      "location": {
+        "type": "String",
+        "value": "westeurope"
+      },
+      "serverName": {
+        "type": "String",
+        "value": "vm-postgre"
+      },
+      "serverEdition": {
+        "type": "String",
+        "value": "Burstable"
+      },
+      "storageSizeGB": {
+        "type": "Int",
+        "value": 32
+      },
+      "haEnabled": {
+        "type": "String",
+        "value": "Disabled"
+      },
+      "availabilityZone": {
+        "type": "String",
+        "value": "2"
+      },
+      "standbyAvailabilityZone": {
+        "type": "String",
+        "value": ""
+      },
+      "version": {
+        "type": "String",
+        "value": "13"
+      },
+      "tags": {
+        "type": "Object",
+        "value": {}
+      },
+      "backupRetentionDays": {
+        "type": "Int",
+        "value": 7
+      },
+      "geoRedundantBackup": {
+        "type": "String",
+        "value": "Disabled"
+      },
+      "vmName": {
+        "type": "String",
+        "value": "Standard_B1ms"
+      },
+      "vnetData": {
+        "type": "Object",
+        "value": {
+          "isLoading": false,
+          "virtualNetworkName": "devops_test_rg-vnet",
+          "virtualNetworkId": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Network/virtualNetworks/devops_test_rg-vnet",
+          "subnetName": "default",
+          "virtualNetworkSubscriptionName": "Azure subscription 1",
+          "virtualNetworkAddressPrefix": "10.0.0.0/29",
+          "virtualNetworkResourceGroupName": "devops_test_rg",
+          "location": "westeurope",
+          "subscriptionId": "883d6f0a-68d8-4dfa-875a-f63279abba60",
+          "subnetProperties": {
+            "addressPrefix": "10.0.0.0/29",
+            "delegations": [
+              {
+                "name": "dlg-Microsoft.DBforPostgreSQL-flexibleServers",
+                "properties": {
+                  "serviceName": "Microsoft.DBforPostgreSQL/flexibleServers"
+                }
+              }
+            ]
+          },
+          "subnetNeedsUpdate": false,
+          "isNewVnet": true,
+          "delegatedSubnetArguments": {
+            "SubnetArmResourceId": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Network/virtualNetworks/devops_test_rg-vnet/subnets/default"
+          },
+          "usePrivateDnsZone": true,
+          "isNewPrivateDnsZone": true,
+          "privateDnsResourceGroup": "devops_test_rg",
+          "privateDnsSubscriptionId": "883d6f0a-68d8-4dfa-875a-f63279abba60",
+          "privateDnsZoneName": "vm-postgre.private.postgres.database.azure.com",
+          "privateDnsZoneSubscription": "Azure subscription 1",
+          "privateDnsZoneArguments": {
+            "PrivateDnsZoneArmResourceId": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Network/privateDnsZones/vm-postgre.private.postgres.database.azure.com"
+          },
+          "linkVirtualNetwork": true,
+          "Network": {
+            "DelegatedSubnetResourceId": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Network/virtualNetworks/devops_test_rg-vnet/subnets/default",
+            "PrivateDnsZoneResourceId": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Network/privateDnsZones/vm-postgre.private.postgres.database.azure.com",
+            "PrivateDnsZoneArmResourceId": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Network/privateDnsZones/vm-postgre.private.postgres.database.azure.com"
+          }
+        }
+      },
+      "virtualNetworkDeploymentName": {
+        "type": "String",
+        "value": "virtualNetwork_20220825T154759466Z"
+      },
+      "virtualNetworkLinkDeploymentName": {
+        "type": "String",
+        "value": "virtualNetworkLink_20220825T154759466Z"
+      },
+      "privateDnsZoneDeploymentName": {
+        "type": "String",
+        "value": "privateDnsZone_20220825T154759466Z"
+      },
+      "identityData": {
+        "type": "Object",
+        "value": {}
+      },
+      "dataEncryptionData": {
+        "type": "Object",
+        "value": {}
+      },
+      "apiVersion": {
+        "type": "String",
+        "value": "2021-06-01"
+      },
+      "aadEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "aadData": {
+        "type": "Object",
+        "value": {}
+      },
+      "authConfig": {
+        "type": "Object",
+        "value": {}
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2022-08-25T15:49:39.1166894Z",
+    "duration": "PT1M37.6609465S",
+    "correlationId": "53eda0f9-a270-4ac0-b546-3790fc6ac022",
+    "providers": [
+      {
+        "namespace": "Microsoft.Resources",
+        "resourceTypes": [
+          {
+            "resourceType": "deployments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.DBforPostgreSQL",
+        "resourceTypes": [
+          {
+            "resourceType": "flexibleServers",
+            "locations": [
+              "westeurope"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/privateDnsZone_20220825T154759466Z",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "privateDnsZone_20220825T154759466Z"
+          },
+          {
+            "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/virtualNetwork_20220825T154759466Z",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "virtualNetwork_20220825T154759466Z"
+          }
+        ],
+        "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/virtualNetworkLink_20220825T154759466Z",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "virtualNetworkLink_20220825T154759466Z"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/virtualNetworkLink_20220825T154759466Z",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "virtualNetworkLink_20220825T154759466Z"
+          }
+        ],
+        "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.DBforPostgreSQL/flexibleServers/vm-postgre",
+        "resourceType": "Microsoft.DBforPostgreSQL/flexibleServers",
+        "resourceName": "vm-postgre"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.DBforPostgreSQL/flexibleServers/vm-postgre",
+            "resourceType": "Microsoft.DBforPostgreSQL/flexibleServers",
+            "resourceName": "vm-postgre"
+          }
+        ],
+        "id": "/subscriptions/883d6f0a-68d8-4dfa-875a-f63279abba60/resourceGroups/devops_test_rg/providers/Microsoft.Resources/deployments/addAdmins",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "addAdmins"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
