@@ -1,0 +1,17 @@
+Lesson25.companies
+{number_of_employees: {$gt:40}, founded_year: 2000}
+
+Lesson25.products
+{"rating": {$lt:4}, color: "green" }
+
+Lesson25.students
+{name:/^B\w+/, "scores.0.score": {$gt: 40} }
+
+Lesson25.Books
+
+{
+  _id:"$author",
+  authors:{
+    $addToSet: "$authors"
+  }
+}
