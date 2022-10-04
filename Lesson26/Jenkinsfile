@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone rep') {
+            steps {
+                sh 'cd /var/jenkins_home/workspace/Final | rm -rf *'
+                sh 'git clone https://github.com/fhoton/DevOps_learning.git'
+            }
+        }
+        
+        stage('Grafana&Prometheus') {
+            steps{
+                sh 'cd /var/jenkins_home/workspace/Final/DevOps_learning/Lesson26/Grafana_Prometeus'
+                sh 'docker-compose up -d'
+            }
+        }
+        
+        stage('Terraform_Azure') {
+            steps{
+                sh 'cd /var/jenkins_home/workspace/Final/DevOps_learning/Lesson26/Azure'
+                sh 'terraform init'
+                sh 'terraform apply'
+            }
+        }
+        
+    }
+}
